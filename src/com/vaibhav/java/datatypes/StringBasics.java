@@ -1,4 +1,4 @@
-package datatypes;
+package com.vaibhav.java.datatypes;
 
 public class StringBasics {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package bank;
+package com.vaibhav.java.bankEncapsulation;
 
 public class VsBank {
     public static void main(String[] args){
