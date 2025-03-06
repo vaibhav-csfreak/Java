@@ -1,4 +1,4 @@
-package com.vaibhav.java.indiaBatting;
+package com.vaibhav.java.SynchronizedindiaBatting;
 
 public class Virat implements Runnable {
     private Runs runs;

@@ -1,4 +1,4 @@
-package com.vaibhav.java.indiaBatting;
+package com.vaibhav.java.SynchronizedindiaBatting;
 
 public class Inning {
     public static void main(String[] args){
