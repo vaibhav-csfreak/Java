@@ -13,10 +13,12 @@ public class Teams {
         Ipl Rr = new Ipl();
         Rr.setSlogan("Halla Bol");
         Rr.setState("Rajasthan");
+        Rr.setName(IplTeams.RR.name());
         Mi.getSlogan();
         Csk.getSlogan();
         Rcb.getSlogan();
         System.out.println(Rcb.getState());
         System.out.println(Rr.getState());
+        System.out.println(Rr.getName());
     }
 }
