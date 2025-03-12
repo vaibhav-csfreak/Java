@@ -4,6 +4,7 @@ public class Ipl extends Icc{
     public String country;
     public String state;
     public String name;
+    public String slogan;
 
     public String getName() {
         return name;
@@ -11,6 +12,10 @@ public class Ipl extends Icc{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setSlogan(String slogan) {
+        this.slogan = slogan;
     }
 
     public String getCountry() {
@@ -29,9 +34,8 @@ public class Ipl extends Icc{
         this.state = state;
     }
 
-    @Override
-    public void getSlogan() {
-        System.out.println("Its best vs best");
+    public String getSlogan() {
+        return slogan;
     }
 
     public static void main(String[] args){
