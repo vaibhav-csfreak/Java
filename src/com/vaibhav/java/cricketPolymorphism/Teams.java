@@ -1,6 +1,8 @@
 package com.vaibhav.java.cricketPolymorphism;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Stack;
 
 public class Teams {
 
@@ -43,6 +45,19 @@ public class Teams {
         for(int i=0;i<internationalTeams.size();i++){
             System.out.println(internationalTeams.get(i).getTeamCount());
             System.out.println(internationalTeams.get(i).getVenueCount());
+        }
+        Stack<Ipl[]> schedule = new Stack<>();
+        schedule.push(new Ipl[]{Mi, Csk});
+        schedule.push(new Ipl[]{Rr, Csk});
+        schedule.push(new Ipl[]{Mi, Rr});
+        schedule.push(new Ipl[]{Rr, Rcb});
+        schedule.push(new Ipl[]{Rcb, Csk});
+        Integer numberOfMatches = schedule.size();
+        for(int i=0;i<numberOfMatches;i++) {
+            System.out.println("Match "+(i+1)+": "+schedule.peek()[0].getName()+ " vs " + schedule.peek()[1].getName());
+            int winner = (Math.random() < 0.5) ? 0 : 1;
+            System.out.println("Winner: "+schedule.peek()[winner].getName());
+            schedule.pop();
         }
     }
 }
